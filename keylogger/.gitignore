@@ -1,0 +1,8 @@
+# Ignorar archivos de salida del keylogger
+registro.txt
+nohup.out
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+*.swp
