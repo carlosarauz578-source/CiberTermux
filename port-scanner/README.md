@@ -21,3 +21,29 @@ Funciona en **Termux** y aprovecha **multithreading** para acelerar el escaneo d
    ```bash
    pkg update && pkg upgrade
    pkg install python git
+
+Ejecutador y resultado: python3 scanner.py
+==================================================
+        ESCÁNER TCP DE PUERTOS (TERMUX READY)
+==================================================
+Introduce la IP o dominio: www.google.com
+Puerto inicial: 1
+Puerto final: 1000
+Timeout por puerto en segundos [Defecto 0.5]: 0.7
+[+] Objetivo resuelto a: 142.251.153.119
+
+Escaneando www.google.com (142.251.153.119) del puerto 1 al 1000...
+
+[+] Puerto 80 abierto (HTTP)
+[+] Puerto 443 abierto (HTTPS)
+
+==================================================
+RESULTADOS DEL ESCANEO
+==================================================
+{
+    "80": "HTTP",
+    "443": "HTTPS"
+}
+
+[+] Resultados guardados en 'resultados.json'
+~/CiberTermux/port-scanner $
